@@ -3,8 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import { CartWidget } from "./CartWidget";
-export const Navbar = () => (
-      <>
+
+export const NavBar = () => (
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">Indumentaria S.A.</Navbar.Brand>
@@ -16,5 +16,4 @@ export const Navbar = () => (
           <CartWidget/>
         </Container>
       </Navbar>
-      </>
 );
