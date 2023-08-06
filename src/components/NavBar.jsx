@@ -1,4 +1,4 @@
-import carrito from '../imagenes/carrito.jpg';
+import { CartWidget } from "./CartWidget";
 
 export const NavBar = () => (
 <header>
@@ -8,6 +8,6 @@ export const NavBar = () => (
         <a href='#'>Mujeres</a>
         <a href='#'>Niños</a>
     </nav>
-    <img src={carrito} alt="carrito de supermecado con fuego" /> 33
+    <CartWidget/>
 </header>
 );
