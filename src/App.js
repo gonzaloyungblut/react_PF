@@ -1,5 +1,5 @@
-
 import './App.css';
+import carrito from './imagenes/carrito.jpg';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
     <a href='#'>Mujeres</a>
     <a href='#'>Niños</a>
   </nav>
+  <img src={carrito} alt="carrito de supermecado con fuego"/> 33
   </header>);
 }
 
