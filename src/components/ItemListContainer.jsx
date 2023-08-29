@@ -20,17 +20,17 @@ export const ItemListContainer = (props) => {
     return (
         <Container>
             <h1>{props.greeting}</h1>
-            <div>
+            <div style={{display:"flex", flexWrap: "wrap"}} >
                 {products.map((product) => (
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={product.avatar} />
+                    <Card key={product.id} style={{ width: '18rem' }}>
+                        <Card.Img style={{height: "200px" }} variant="top" src={product.avatar} />
                         <Card.Body>
                             <Card.Title>{product.name}</Card.Title>
                             <Card.Text>
                                 {product.category}
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">Ver más</Button>
                         </Card.Body>
                     </Card>
                 ))}
