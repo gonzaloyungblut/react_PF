@@ -38,6 +38,6 @@ export const ItemListContainer = (props) => {
       </Card>
             ))}
         </div>
-    </Container>;
+    </Container>
     );
 };
