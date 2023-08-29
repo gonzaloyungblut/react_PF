@@ -4,23 +4,26 @@ import { ItemList } from "./ItemList";
 
 import data from "../data/products.json";
 
-export const ItemListContainer = (props) => {
-    const [products, setProducts] = useState([]);
+export const ItemDetailContainer = (props) => {
+    const [product, setProduct] = useState(null);
 
     useEffect(() => {
         const promise = new Promise((resolve, reject) => {
-            setTimeout(() => resolve(data), 2000);
+            setTimeout(() => resolve(data[0]), 2000);
         });
 
-        promise.then((data) => setProducts(data));
+        promise.then((data) => setProduct(data));
 
     }, []);
 
+    if (!product) return <div>Loading...</div>
     return (
         <Container>
             <h1>{props.greeting}</h1>
             <div style={{display:"flex", flexWrap: "wrap"}} >
-                <ItemList products={products}/>
+                <h1>{product.name} </h1>
+                <img src={product.avatar} alt={product.category}/>
+                <div>{product.stock}</div>
             </div>
         </Container>
     );
