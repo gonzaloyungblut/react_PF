@@ -9,9 +9,10 @@ export const NavBar = () => (
         <Container>
           <Navbar.Brand href="#home">Indumentaria S.A.</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Hombres</Nav.Link>
-            <Nav.Link href="#features">Mujeres</Nav.Link>
-            <Nav.Link href="#pricing">Niños</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="./category/Hombre">Hombres</Nav.Link>
+            <Nav.Link href="/category/Mujere">Mujeres</Nav.Link>
+            <Nav.Link href="/category/Niños">Niños</Nav.Link>
           </Nav>
           <CartWidget/>
         </Container>
