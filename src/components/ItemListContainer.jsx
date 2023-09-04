@@ -19,7 +19,7 @@ export const ItemListContainer = (props) => {
             if (!id) { setProducts(data);} else { 
                 const productsFiltered = data.filter((product)=>product.category === id);
             setProducts(productsFiltered);}
-    });}, []);
+    });}, [id]);
 
     return (
         <Container>
